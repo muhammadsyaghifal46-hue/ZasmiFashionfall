@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ZASMI Fashion | Kontak</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+    <nav class="navbar">
+      <div class="logo">ZASMI Fashion</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="produk.html">Koleksi</a></li>
+        <li><a href="tentangkami.html">Tentang Kami</a></li>
+        <li><a href="kontak.html">Kontak</a></li>
+      </ul>
+      <div class="nav-icons">
+            <div class="cart-icon" id="open-cart"><span>🛒</span><span id="cart-count">0</span></div>
+            <div class="hamburger" onclick="toggleMenu()">
+                <div class="bar"></div><div class="bar"></div><div class="bar"></div>
+            </div>
+        </div>
+    </nav>
+    <section id="produk" class="products">
+    <h2 class="section-title">Koleksi Terbaru</h2>
+    
+    <div class="product-grid">
+        
+        <div class="product-card">
+            <div class="product-image">
+             <div class="image-slider">
+                  <img src="img/armani01.jpg">
+                  <img src="img/armani02.jpg">
+                  <img src="img/armani03.jpg">
+                  <img src="img/armani04.jpg">
+                  <img src="img/armani05.jpg">
+                  <img src="img/armani06.jpg">
+                  </div>
+              </div>
+            <div class="product-info">
+                <h3>Gamis Armani Silk</h3>
+                <p class="price">Rp 160.000</p>
+                <button class="view-detail-btn" 
+                        data-name="Gamis Armani Silk " 
+                        data-prices='[160000, 165000, 167000, 170000]' 
+                        data-images='["img/armani01.jpg", "img/armani02.jpg", "img/armani03.jpg", "img/armani04.jpg", "img/armani05.jpg", "img/armani06.jpg"]'
+                        data-colors='["Krem / Beige", "Dusty Pink",  "Terakota", "Biru Denim", "Emerald Green", "Merah Marun"]'
+                        data-sizes='["S", "M", "L", "XL"]'>
+                    Tambah ke Keranjang
+                </button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image">
+             <div class="image-slider">
+                  <img src="img/birang01.jpg">
+                  <img src="img/birang02.jpg">
+                  <img src="img/birang03.jpg">
+                  <img src="img/birang04.jpg">
+                  <img src="img/birang05.jpg">
+                  </div>
+              </div>
+            <div class="product-info">
+                <h3>Gamis Bini Orang</h3>
+                <p class="price">Rp 225.000</p>
+                <button class="view-detail-btn" 
+                        data-name="Gamis Bini Orang" 
+                        data-prices='[235000, 250000, 300000]' 
+                        data-images='["img/birang01.jpg", "img/birang02.jpg", "img/birang03.jpg", "img/birang04.jpg", "img/birang05.jpg"]'
+                        data-colors='[ "Army", "Merah Muda", "Ungu Muda", "Hijau Muda", "Biru Muda"]'
+                        data-sizes='["M", "L", "XL"]'>
+                    Tambah ke Keranjang
+                </button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image">
+             <div class="image-slider">
+                  <img src="img/abaya01.jpg">
+                  <img src="img/abaya02.jpg">
+                  <img src="img/abaya03.jpg">
+                  <img src="img/abaya04.jpg">
+                  <img src="img/abaya05.jpg">
+                  </div>
+              </div>
+            <div class="product-info">
+                <h3>Gamis Abaya Muslimah</h3>
+                <p class="price">Rp 235.000</p> 
+                <button class="view-detail-btn" 
+                        data-name="Gamis Abaya Muslimah" 
+                        data-prices='[245000, 260000, 290000]' 
+                        data-images='["img/abaya01.jpg", "img/abaya02.jpg", "img/abaya03.jpg", "img/abaya04.jpg", "img/abaya05.jpg"]'
+                        data-colors='["Hitam", "Mocca", "Navy", "Hijau", "Merah"]'
+                        data-sizes='["M", "L", "XL"]'>
+                    Tambah ke Keranjang
+                </button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image">
+             <div class="image-slider">
+                  <img src="img/midi01.jpg">
+                  <img src="img/midi02.jpg">
+                  <img src="img/midi03.jpg">
+                  <img src="img/midi04.jpg">
+                  <img src="img/midi05.jpg">
+                  <img src="img/midi05.jpg">
+                  </div>
+              </div>
+            <div class="product-info">
+                <h3>Gamis Midi Dress</h3>
+                <p class="price">Rp 67.000</p>
+                <button class="view-detail-btn" 
+                        data-name="Gamis Midi Dress" 
+                        data-prices='[67000, 75000, 83000]' 
+                        data-images='["img/midi01.jpg", "img/midi02.jpg", "img/midi03.jpg", "img/midi04.jpg", "img/midi05.jpg", "img/midi06.jpg"]'
+                        data-colors='["Army", "dusty rose", "dusty blue/grey", "krem (beige)", "Mocca", "Hitam"]'
+                        data-sizes='["M", "L", "XL"]'>
+                    Tambah ke Keranjang
+                </button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image">
+             <div class="image-slider">
+                  <img src="img/tunik.01.jpg">
+                  <img src="img/tunik.02.jpg">
+                  <img src="img/tunik.03.jpg">
+                  <img src="img/tunik.04.jpg">
+                  <img src="img/tunik.05.jpg">
+                  <img src="img/tunik.06.jpg">
+
+                  </div>
+              </div>
+            <div class="product-info">
+                <h3>Tunik Rayon Twill Premium</h3>
+                <p class="price">Rp 72.000</p> 
+                <button class="view-detail-btn" 
+                        data-name="Tunik Rayon Twill Premium" 
+                        data-prices='[72000, 79000, 84000]' 
+                        data-images='["img/tunik.01.jpg", "img/tunik.02.jpg", "img/tunik.03.jpg", "img/tunik.04.jpg", "img/tunik.05.jpg", "img/tunik.06.jpg"]'
+                        data-colors='["Terakota", "Olive Green", "Navy Blue", "Krem Mentega", "Merah Marun", "Ungu Lavender"]'
+                        data-sizes='["M", "L", "XL"]'>
+                    Tambah ke Keranjang
+                </button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image">
+             <div class="image-slider">
+                  <img src="img/crincle.01.jpg">
+                  <img src="img/crincle.02.jpg">
+                  <img src="img/crincle.03.jpg">
+                  <img src="img/crincle.04.jpg">
+                  <img src="img/crincle.05.jpg">
+                  </div>
+              </div>
+            <div class="product-info">
+                <h3>Gamis Crinkle Airflow</h3>
+                <p class="price">Rp 63.000</p>
+                <button class="view-detail-btn" 
+                        data-name="Gamis Crinkle Airflow" 
+                        data-prices='[63000, 69000, 78000]' 
+                        data-images='["img/crincle.01.jpg", "img/crincle.02.jpg", "img/crincle.03.jpg", "img/crincle.04.jpg", "img/crincle.05.jpg"]'
+                        data-colors='["Beige", "Charcoal Grey", "Merah Marun", "Sage Green", "Putih"]'
+                        data-sizes='["M", "L", "XL"]'>
+                    Tambah ke Keranjang
+                </button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image">
+             <div class="image-slider">
+                  <img src="img/korea01.jpg">
+                  <img src="img/korea02.jpg">
+                  <img src="img/korea03.jpg">
+                  </div>
+              </div>
+            <div class="product-info">
+                <h3>GAMIS HANBOK KOREA</h3>
+                <p class="price">Rp 457.000</p>
+                <button class="view-detail-btn" 
+                        data-name="GAMIS HANBOK KOREA" 
+                        data-prices='[457000, 477000]' 
+                        data-images='["img/korea01.jpg", "img/korea02.jpg", "img/korea03.jpg"]'
+                        data-colors='["Hijau", "Pink Peach", "Biru Grey"]'
+                        data-sizes='["L", "XL"]'>
+                    Tambah ke Keranjang
+                </button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image">
+             <div class="image-slider">
+                  <img src="img/bunga01.jpg">
+                  <img src="img/bunga02.jpg">
+                  <img src="img/bunga03.jpg">
+                  <img src="img/bunga04.jpg">
+                  </div>
+              </div>
+            <div class="product-info">
+                <h3>Tunik MOTIF Kekinian</h3>
+                <p class="price">Rp 74.000</p>
+                <button class="view-detail-btn" 
+                        data-name="Tunik MOTIF Kekinian" 
+                        data-prices='[74000, 83000]' 
+                        data-images='["img/bunga01.jpg", "img/bunga02.jpg", "img/bunga03.jpg", "img/bunga04.jpg"]'
+                        data-colors='["Biru Muda", "Oranye Terakota", "Abu-abu Tua", "Olive Green"]'
+                        data-sizes='["M", "XL"]'>
+                    Tambah ke Keranjang
+                </button>
+            </div>
+        </div>
+
+    </div> 
+
+</section>
+
+<div id="product-detail-modal" class="modal">
+    <div class="modal-content detail-content">
+        <span class="close-detail">×</span>
+        <div class="detail-grid">
+            <div class="detail-image-section">
+                <div class="slider-container">
+                    <img id="main-detail-img" src="" alt="Produk">
+                    <div class="slider-nav">
+                        <button onclick="prevImg()">❮</button>
+                        <button onclick="nextImg()">❯</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="detail-info-section">
+                <h2 id="detail-name">Nama Produk</h2>
+                <p class="detail-price" id="detail-price">Rp 0</p>
+                <hr>
+                <div class="variation-group">
+                    <p>Warna:</p>
+                    <div id="color-options" class="options"></div>
+                </div>
+                <div class="variation-group">
+                    <p>Ukuran:</p>
+                    <div id="size-options" class="options"></div>
+                </div>
+                <div class="quantity-group">
+    <p>Kuantitas</p>
+    <div class="quantity-selector">
+        <button type="button" class="qty-btn minus" onclick="decreaseQty()">−</button>
+        <input type="text" id="qty-input" value="1" readonly>
+        <button type="button" class="qty-btn plus" onclick="increaseQty()">+</button>
+    </div>
+</div>
+                <button id="confirm-add-to-cart" class="checkout-btn">Konfirmasi & Tambah</button>
+            </div>
+        </div>
+    </div>
+</div>
+    </section>
+
+        <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h3>Keranjang Belanja</h3>
+            <hr>
+            <div id="cart-items-list"></div>
+            <div class="cart-summary"><strong>Total: <span id="total-price">Rp 0</span></strong></div>
+            <button id="checkout-whatsapp" class="checkout-btn">Checkout via WhatsApp</button>
+        </div>
+    </div>
+
+    <footer><p>&copy; 2026 Zasmi Fashion Exclusive.</p></footer>
+    <script src="script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ZASMI Fashion | Beranda</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">ZASMI FASHION</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="produk.html">Koleksi</a></li>
+            <li><a href="tentangkami.html">Tentang Kami</a></li>
+            <li><a href="kontak.html">Kontak</a></li>         
+        </ul>
+        <div class="nav-icons">
+            <div class="cart-icon" id="open-cart">
+                <span>🛒</span><span id="cart-count">0</span>
+            </div>
+            <div class="hamburger" onclick="toggleMenu()">
+                <div class="bar"></div><div class="bar"></div><div class="bar"></div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+    <video autoplay muted loop playsinline class="video-bg">
+        <source src="video/video.mp4" type="video/mp4">
+        Browser Anda tidak mendukung video background.
+    </video>
+
+    <div class="hero-content">
+        <h1>Koleksi Gamis Premium</h1>
+        <p>Tampil anggun dan syar'i di setiap momen spesial Anda.</p>
+        <a href="produk.html" class="btn-primary">Lihat Koleksi</a>
+    </div>
+</header>
+
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h3>Keranjang Belanja</h3>
+            <hr>
+            <div id="cart-items-list"></div>
+            <div class="cart-summary"><strong>Total: <span id="total-price">Rp 0</span></strong></div>
+            <button id="checkout-whatsapp" class="checkout-btn">Checkout via WhatsApp</button>
+        </div>
+    </div>
+
+    <footer><p>&copy; 2026 Zasmi Fashion Exclusive.</p></footer>
+    <script src="script.js"></script>
+</body>
+</html>
